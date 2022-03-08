@@ -25,8 +25,11 @@ myAge;
 
 /* write a program that output even nums */
 function myLoops(){
-    for (i=2; i<=10; i+=2) 
-    console.log(i);
+    let x = 0;
+    while(x<6){ 
+    console.log(x);
+    x++
+    }
 }
 
 myLoops;
