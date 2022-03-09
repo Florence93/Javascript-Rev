@@ -193,3 +193,28 @@ switch (day){
 }
 }
 swittch;
+
+function snMove(){
+    let depth = parseInt(readLine(), 10)
+let sna = 0;
+
+while (sna < 31){
+    console.log(sna);
+break;
+}
+}
+
+/*
+function main(){
+    
+  let amount = parseFloat(readLine(),10);
+  let rate = parseFloat(readLine(),10);
+
+  function convert (amount,rate){
+  return amount * rate;
+
+}
+console.log(convert(110,1.1));
+}
+main; */
+
