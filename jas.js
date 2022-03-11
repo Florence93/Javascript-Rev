@@ -204,7 +204,7 @@ break;
 }
 }
 
-/*
+
 function main(){
     
   let amount = parseFloat(readLine(),10);
@@ -216,5 +216,14 @@ function main(){
 }
 console.log(convert(110,1.1));
 }
-main; */
+main; 
 
+function obj (){
+    let d = new Date();
+    let date = d.getDay();
+    let time = d.getTime();
+
+    console.log ("Today is :"+date + " "+ "The current time is :" + time)
+}
+
+setInterval(obj,3000);
