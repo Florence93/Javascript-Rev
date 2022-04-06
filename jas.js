@@ -249,3 +249,39 @@ console.log(square.area);
 
 }
 heightCal;
+
+function interest (){
+    let amt = Number( prompt("Enter Amount"));
+    let rate = 0.12;
+    let time =Number( prompt("Enter Duration in value of months"));
+
+    var int = (amt * rate * time);
+    let total_Pay = amt + int; 
+    
+    // add $ sign and convert amt to string
+int = "$" +  int;
+total_Pay = "$" + total_Pay;
+console.log("Interest payed is" +" " + int);
+console.log("Total Amount is " + " "+ total_Pay); 
+}
+
+function myLoop (){
+    // write a loop program that receives input and loop out the condition given
+    
+    let myNo = Number(prompt("Enter No"));
+
+while (true){
+
+    if (myNo <= 10)
+    
+    {
+       console.log(myNo); 
+        myNo = myNo + 2;
+    }
+
+    else{
+        break
+    };
+}    
+    
+}
