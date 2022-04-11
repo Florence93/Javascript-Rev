@@ -270,18 +270,45 @@ function myLoop (){
     
     let myNo = Number(prompt("Enter No"));
 
-while (true){
+for (; myNo <= 10; myNo = myNo + 2){
+    console.log(myNo);
+}
+}
+/*Write a program to calculate the total price of your phone pur‐
+chase. You will keep purchasing phones (hint: loop!) until you
+run out of money in your bank account. You’ll also buy accesso‐
+ries for each phone as long as your purchase amount is below
+your mental spending threshold.
+*/
+function totalPayy(){
+    var phonePrice = 200;
+    var taxRate = 0.05;
+    var spendingThres = 5000;
+    var accessories_Price = 100
+    var bankBal = Number(prompt("Enter Bank Balance")) ;
 
-    if (myNo <= 10)
+    var total_phone = Number(prompt("Enter no of phones to be purchased"));
+    var total_phonePurchase = total_phone * phonePrice;
+
     
-    {
-       console.log(myNo); 
-        myNo = myNo + 2;
+    while (total_phonePurchase < bankBal){
+        //purchase phone
+        total_phonePurchase = total_phone * phonePrice;
+
+        // can we afford accessories?
+       if (total_phonePurchase < spendingThres) {
+            total_phonePurchase = total__phonePurchase + accessories_Price; 
+       }
     }
 
-    else{
-        break
-    };
-}    
+    function taxCalc () {
+        return total_phonePurchase * taxRate
+   }
+
+   function formatAmount(){
+       return "$" + total_phonePurchase.toFixed(2)
+   }
     
+   console.log("Total Amount is:" + formatAmount(total_phonePurchase));
+   console.log("Total Tax calculated for purchase:" + taxCalc())
 }
