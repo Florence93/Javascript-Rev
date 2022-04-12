@@ -280,7 +280,7 @@ run out of money in your bank account. You’ll also buy accesso‐
 ries for each phone as long as your purchase amount is below
 your mental spending threshold.
 */
-function totalPayy(){
+function totalPayy(total__phonePurchase){
     var phonePrice = 200;
     var taxRate = 0.05;
     var spendingThres = 5000;
