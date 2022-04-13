@@ -291,24 +291,42 @@ function totalPayy(total__phonePurchase){
     var total_phonePurchase = total_phone * phonePrice;
 
     
-    while (total_phonePurchase < bankBal){
-        //purchase phone
-        total_phonePurchase = total_phone * phonePrice;
-
-        // can we afford accessories?
-       if (total_phonePurchase < spendingThres) {
-            total_phonePurchase = total__phonePurchase + accessories_Price; 
-       }
+    if (total_phonePurchase < spendingThres){
+        total_phonePurchase = total_phone * accessories_Price;  
+    } else {
+        alert ("Insufficient Balance ")   
     }
 
+
     function taxCalc () {
-        return total_phonePurchase * taxRate
+      return total_phonePurchase * taxRate
    }
 
    function formatAmount(){
-       return "$" + total_phonePurchase.toFixed(2)
-   }
+      return "$" + total_phonePurchase.toFixed(2)
+    }
+
     
    console.log("Total Amount is:" + formatAmount(total_phonePurchase));
    console.log("Total Tax calculated for purchase:" + taxCalc())
 }
+
+// this pbject practise
+function identify (){
+    return this.name;
+}
+
+function speak (){
+    var greet = "Hello, my name is" +" "+ identify.call(this)
+    console.log (greet)
+};
+
+var me = {
+    name: Ola
+} 
+
+var you = {
+    name: Debby
+};
+
+identify.call(me)
