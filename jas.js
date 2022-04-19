@@ -330,3 +330,25 @@ var you = {
 };
 
 identify.call(me)
+
+
+//Javascript Info
+let user = {}
+
+user.name = "John";
+user.surname = "Smith";
+user.name = "Pete";
+delete user.name;
+
+function salary (){
+    let salaries = {
+        John : 100,
+        Smith: 100,
+        Pete: 50,
+    }
+   
+   for (let key in salaries){
+       salaries += salaries[key];
+       alert (salaries);
+   }
+}
